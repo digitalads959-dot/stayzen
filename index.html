@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  [Hostel Group Name] — HOME PAGE
+  Replace every [bracketed] placeholder with real information.
+  See README.md for a step-by-step editing guide.
+  HINDI LATER: duplicate this file as /hi/index.html,
+  change  <html lang="en">  to  <html lang="hi">, and translate
+  the visible text. Nothing else needs to change.
+  ============================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== SEO: TITLE + DESCRIPTION (unique on every page) ===== -->
+<title>Hostel in Indore | Boys &amp; Girls Student Hostel &amp; PG – [Hostel Group Name]</title>
+<meta name="description" content="Safe, clean and affordable hostel in Indore for students and working professionals. 3 hostel brands, 4 locations across Indore with mess food, Wi-Fi, CCTV, power backup and housekeeping. Enquire today.">
+<link rel="canonical" href="https://www.example.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#12566B">
+<meta name="geo.region" content="IN-MP">
+<meta name="geo.placename" content="Indore">
+
+<!-- ===== OPEN GRAPH / SOCIAL ===== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="[Hostel Group Name]">
+<meta property="og:title" content="Hostel in Indore | Boys &amp; Girls Student Hostel &amp; PG – [Hostel Group Name]">
+<meta property="og:description" content="Safe, clean and affordable hostel living in Indore. 3 hostel brands, 4 locations. Mess food, Wi-Fi, CCTV and 24×7 security.">
+<meta property="og:url" content="https://www.example.com/">
+<meta property="og:image" content="https://www.example.com/images/og-home.jpg">
+<meta property="og:locale" content="en_IN">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hostel in Indore | [Hostel Group Name]">
+<meta name="twitter:description" content="Safe, clean and affordable hostel living in Indore. 3 brands, 4 locations.">
+<meta name="twitter:image" content="https://www.example.com/images/og-home.jpg">
+
+<!-- Uncomment when the Hindi version is live:
+<link rel="alternate" hreflang="en-in" href="https://www.example.com/">
+<link rel="alternate" hreflang="hi-in" href="https://www.example.com/hi/">
+<link rel="alternate" hreflang="x-default" href="https://www.example.com/">
+-->
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<!-- [Logo Here] – replace images/favicon.png with the real favicon -->
+
+<!-- ===== SCHEMA 1: LOCAL BUSINESS / HOSTEL — ONE ENTRY PER LOCATION =====
+     Fill in the real name, address, phone and GMB link for each of the 4 locations.
+     NOTE: deliberately no aggregateRating — add it only once you have real, verifiable reviews. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.example.com/#organization",
+      "name": "[Hostel Group Name]",
+      "url": "https://www.example.com/",
+      "logo": "https://www.example.com/images/logo.png",
+      "email": "[Email]",
+      "telephone": "[Phone Number]",
+      "sameAs": ["[Instagram Link]", "[Facebook Link]"]
+    },
+    {
+      "@type": "Hostel",
+      "@id": "https://www.example.com/#location-1",
+      "name": "[Brand Name 1] – [Location 1 Name]",
+      "url": "https://www.example.com/",
+      "image": "https://www.example.com/images/[building-photo-location-1].jpg",
+      "telephone": "[Phone Number]",
+      "priceRange": "[Price – to be added]",
+      "parentOrganization": { "@id": "https://www.example.com/#organization" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[Hostel Address – Location 1]",
+        "addressLocality": "[Location 1 Name]",
+        "addressRegion": "Madhya Pradesh",
+        "postalCode": "[PIN Code]",
+        "addressCountry": "IN"
+      },
+      "areaServed": { "@type": "City", "name": "Indore" },
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "CCTV surveillance", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Mess / canteen", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Power backup", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Housekeeping", "value": true }
+      ],
+      "hasMap": "[GMB Link – Location 1]"
+    },
+    {
+      "@type": "Hostel",
+      "@id": "https://www.example.com/#location-2",
+      "name": "[Brand Name 2] – [Location 2 Name]",
+      "url": "https://www.example.com/",
+      "telephone": "[Phone Number]",
+      "priceRange": "[Price – to be added]",
+      "parentOrganization": { "@id": "https://www.example.com/#organization" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[Hostel Address – Location 2]",
+        "addressLocality": "[Location 2 Name]",
+        "addressRegion": "Madhya Pradesh",
+        "postalCode": "[PIN Code]",
+        "addressCountry": "IN"
+      },
+      "areaServed": { "@type": "City", "name": "Indore" },
+      "hasMap": "[GMB Link – Location 2]"
+    },
+    {
+      "@type": "Hostel",
+      "@id": "https://www.example.com/#location-3",
+      "name": "[Brand Name 2] – [Location 3 Name]",
+      "url": "https://www.example.com/",
+      "telephone": "[Phone Number]",
+      "priceRange": "[Price – to be added]",
+      "parentOrganization": { "@id": "https://www.example.com/#organization" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[Hostel Address – Location 3]",
+        "addressLocality": "[Location 3 Name]",
+        "addressRegion": "Madhya Pradesh",
+        "postalCode": "[PIN Code]",
+        "addressCountry": "IN"
+      },
+      "areaServed": { "@type": "City", "name": "Indore" },
+      "hasMap": "[GMB Link – Location 3]"
+    },
+    {
+      "@type": "Hostel",
+      "@id": "https://www.example.com/#location-4",
+      "name": "[Brand Name 3] – [Location 4 Name]",
+      "url": "https://www.example.com/",
+      "telephone": "[Phone Number]",
+      "priceRange": "[Price – to be added]",
+      "parentOrganization": { "@id": "https://www.example.com/#organization" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[Hostel Address – Location 4]",
+        "addressLocality": "[Location 4 Name]",
+        "addressRegion": "Madhya Pradesh",
+        "postalCode": "[PIN Code]",
+        "addressCountry": "IN"
+      },
+      "areaServed": { "@type": "City", "name": "Indore" },
+      "hasMap": "[GMB Link – Location 4]"
+    }
+  ]
+}
+</script>
+
+<!-- ===== SCHEMA 2: FAQ PAGE (answer-friendly for Google + AI assistants) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is the best hostel in Indore for students?",
+      "acceptedAnswer": { "@type": "Answer", "text": "[Hostel Group Name] runs 3 hostel brands across 4 locations in Indore for boys, girls and working professionals. The best location depends on your college or office — check the Our 4 Locations section and pick the one closest to you, or call [Phone Number] and we will suggest the nearest hostel." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the monthly rent of a hostel in Indore?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Rent depends on the location, brand and room type (single, double or triple sharing). Room-wise pricing for each of our hostels is: [Price – to be added]. Please call [Phone Number] or send a WhatsApp message for the current rate and availability." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do the hostels provide mess food?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every hostel has an in-house mess / canteen serving fresh vegetarian meals. The exact meal timings and the weekly menu are: [Meal Plan & Timings – to be added]." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the hostel safe for girls?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Safety is our first priority. Our hostels have CCTV surveillance, controlled entry, on-site staff and a warden. Visitors and entry/exit rules are listed here: [Rules – to be added]. Parents are welcome to visit and inspect the hostel before booking." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I visit the hostel before taking admission?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, we encourage it. Visit timings are [Working Hours / Visit Timing – to be added]. Call [Phone Number] to book a visit slot at the location you are interested in." }
+    },
+    {
+      "@type": "Question",
+      "name": "What documents are required for hostel admission in Indore?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Typically an ID proof, a college or company ID, and a parent or guardian contact. The final document list and any deposit or agreement requirement will be confirmed at the time of booking: [Documents & Deposit – to be added]." }
+    }
+  ]
+}
+</script>
+
+<!-- ===== SCHEMA 3: BREADCRUMBS ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.example.com/" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- =========================================================
+     ICON SPRITE — shared by every page. Add new icons here.
+     ========================================================= -->
+<svg class="svg-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.2-2.9 7.7-7 9-4.1-1.3-7-4.8-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-cctv" viewBox="0 0 24 24"><path d="M3 7l14-3 2 5-14 3z"/><path d="M5 12v4a2 2 0 002 2h3"/><path d="M17 9l3 1"/><circle cx="18" cy="18" r="2.5"/></symbol>
+    <symbol id="i-meal" viewBox="0 0 24 24"><path d="M6 3v8a2 2 0 004 0V3"/><path d="M8 11v10"/><path d="M16 3c-1.7 1.5-2.5 3.2-2.5 5.5S14.3 12 16 12h1V3z"/><path d="M17 12v9"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18V7"/><path d="M3 12h13a5 5 0 015 5v1"/><path d="M3 18h18"/><circle cx="7.5" cy="9" r="2"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 8.5a15 15 0 0120 0"/><path d="M5.5 12a10 10 0 0113 0"/><path d="M9 15.5a5 5 0 016 0"/><circle cx="12" cy="19" r="1"/></symbol>
+    <symbol id="i-power" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+    <symbol id="i-clean" viewBox="0 0 24 24"><path d="M4 20l6-6"/><path d="M10 14l4-4 6 6-4 4z"/><path d="M14 4v3M18 6l-2 2M20 10h-3"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="12" rx="2"/><path d="M4 11h16"/><path d="M7 16v3M17 16v3"/><circle cx="8" cy="19" r="1.5"/><circle cx="16" cy="19" r="1.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6 3h3l2 5-2 1a11 11 0 006 6l1-2 5 2v3a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="11" r="2.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-3.5 3.1-5.5 7-5.5s7 2 7 5.5"/><path d="M16 5.5a3.5 3.5 0 010 6.6"/><path d="M18 20c0-2.4-.8-4.2-2-5.3"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 012-2h12v18H6a2 2 0 01-2-2z"/><path d="M8 3v18"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v10a1 1 0 01-1 1H4a1 1 0 01-1-1z"/><path d="M9 21v-6h6v6"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4c-9 0-14 4-14 10a6 6 0 006 6c6 0 8-5 8-16z"/><path d="M9 15c2-3 5-5 8-6"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.3 14c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.7-.1a12 12 0 01-6.6-5.8c-.5-.9-.5-1.7-.4-2.1.1-.4.6-1.1 1-1.3.2-.1.6-.1.8 0l.9 1.5c.1.2 0 .4-.1.5l-.5.6c-.1.1-.2.3-.1.5.4.9 1.5 2 2.5 2.5.2.1.4.1.5-.1l.6-.6c.1-.1.3-.2.5-.1l1.5.8c.1.1.2.5.1.7z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM17.5 6a1 1 0 110 2 1 1 0 010-2z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.5 1.6-1.5h1.7V4.3c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.5H7.6V14h2.3v8z"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M21.6 7.5c-.2-.9-.9-1.6-1.8-1.8C18.2 5.3 12 5.3 12 5.3s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 9.1 2 12 2 12s0 2.9.4 4.5c.2.9.9 1.6 1.8 1.8 1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.5.4-4.5s0-2.9-.4-4.5zM10 15.2V8.8L15.5 12z"/></symbol>
+  </defs>
+</svg>
+
+<!-- =========================================================
+     HEADER  (identical on all pages)
+     ========================================================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="[Hostel Group Name] – Home">
+      <span class="brand-logo" aria-hidden="true">[Logo<br>Here]</span>
+      <span class="brand-name">[Hostel Group Name]
+        <span class="brand-sub">3 Brands · 4 Locations · Indore</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <svg class="icon" aria-hidden="true"><use href="#i-home"></use></svg>
+      <span class="muted" style="font-size:.7rem;margin-left:4px">Menu</span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Main menu">
+      <ul class="nav-list">
+        <li><a class="is-active" href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="btn btn--tel" href="tel:+91XXXXXXXXXX">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg> Call Now
+        </a>
+        <a class="btn btn--wa" href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20hostel%20details%20in%20Indore" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-wa"></use></svg> WhatsApp
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- =========================================================
+       HERO
+       ========================================================= -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Hostels in Indore, Madhya Pradesh</span>
+        <h1>Safe &amp; Comfortable Hostel Living in Indore</h1>
+        <p class="lead">
+          [Hostel Group Name] runs <strong>3 hostel brands across 4 locations in Indore</strong> for
+          students, working professionals, boys and girls. Clean rooms, home-style mess food,
+          Wi-Fi, power backup and CCTV security — a place your parents will approve of.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn--primary btn--block" href="#enquiry">
+            <svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg> Enquire Now
+          </a>
+          <a class="btn btn--wa btn--block" href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20hostel%20details%20in%20Indore" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-wa"></use></svg> WhatsApp Us
+          </a>
+        </div>
+        <p class="hero-note">
+          <svg class="icon" aria-hidden="true" style="width:18px;height:18px"><use href="#i-check"></use></svg>
+          Parents are welcome to visit and see the rooms before booking.
+        </p>
+
+        <div class="trust-strip">
+          <div><strong>4</strong><span>Locations in Indore</span></div>
+          <div><strong>3</strong><span>Hostel brands</span></div>
+          <div><strong>24×7</strong><span>Security &amp; CCTV</span></div>
+          <div><strong>Mess</strong><span>In-house food</span></div>
+        </div>
+      </div>
+
+      <div>
+        <!-- Replace this placeholder with a real photo:
+             <img src="images/hero-hostel-indore.jpg" alt="Hostel building in Indore with clean rooms and study area" loading="lazy" width="1200" height="900"> -->
+        <div class="ph ph--img" role="img" aria-label="[Building Photo Here] – exterior of the hostel in Indore">
+          [Building Photo Here]
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       OUR BRANDS
+       ========================================================= -->
+  <section class="section" aria-labelledby="brands-h">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow eyebrow--accent">Our Brands</span>
+        <h2 id="brands-h">Three hostel brands. One standard of care.</h2>
+        <p>Each brand has its own identity and its own location in Indore — choose the one nearest your college, coaching centre or office.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card brand-card">
+          <div class="ph brand-card__logo" role="img" aria-label="[Logo or Photo Here] for Brand Name 1">[Logo/Photo Here]</div>
+          <h3>[Brand Name 1]</h3>
+          <p class="muted mb-0">[One-line description of Brand 1 – to be added]</p>
+          <p style="margin-top:12px"><a class="btn btn--outline btn--block" href="contact.html">View location &amp; enquire</a></p>
+        </article>
+
+        <article class="card brand-card">
+          <div class="ph brand-card__logo" role="img" aria-label="[Logo or Photo Here] for Brand Name 2">[Logo/Photo Here]</div>
+          <h3>[Brand Name 2]</h3>
+          <p class="muted mb-0">[One-line description of Brand 2 – to be added]</p>
+          <p style="margin-top:12px"><a class="btn btn--outline btn--block" href="contact.html">View location &amp; enquire</a></p>
+        </article>
+
+        <article class="card brand-card">
+          <div class="ph brand-card__logo" role="img" aria-label="[Logo or Photo Here] for Brand Name 3">[Logo/Photo Here]</div>
+          <h3>[Brand Name 3]</h3>
+          <p class="muted mb-0">[One-line description of Brand 3 – to be added]</p>
+          <p style="margin-top:12px"><a class="btn btn--outline btn--block" href="contact.html">View location &amp; enquire</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       HOSTEL HIGHLIGHTS (8 icon cards)
+       ========================================================= -->
+  <section class="section section--surface" aria-labelledby="highlights-h">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Hostel Highlights</span>
+        <h2 id="highlights-h">Everything a student needs, under one roof</h2>
+        <p>Simple, dependable facilities across all our Indore hostels. Availability of each facility may vary slightly by location — please confirm at the time of booking.</p>
+      </div>
+
+      <div class="grid grid--4">
+        <article class="card">
+          <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></div>
+          <h3>Safe &amp; Secure</h3>
+          <p class="muted mb-0">Controlled entry, on-site staff and a dedicated warden at every hostel.</p>
+        </article>
+        <article class="card">
+          <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-cctv"></use></svg></div>
+          <h3>CCTV Surveillance</h3>
+          <p class="muted mb-0">Cameras covering the entrance and common areas, monitored round the clock.</p>
+        </article>
+        <article class="card">
+          <div class="icon-badge icon-badge--accent"><svg class="icon" aria-hidden="true"><use href="#i-meal"></use></svg></div>
+          <h3>Mess / Canteen Food</h3>
+          <p class="muted mb-0">Fresh, hygienic vegetarian meals cooked in our in-house kitchen.</p>
+        </article>
+        <article class="card">
+          <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-bed"></use></svg></div>
+          <h3>Clean Rooms</h3>
+          <p class="muted mb-0">Furnished rooms with bed, study table, storage and regular cleaning.</p>
+        </article>
+        <article class="card">
+          <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-wifi"></use></svg></div>
+          <h3>Wi-Fi Internet</h3>
+          <p class="muted mb-0">High-speed internet for online classes, assignments and video calls.</p>
+        </article>
+        <article class="card">
+          <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-power"></use></svg></div>
+          <h3>Power Backup</h3>
+          <p class="muted mb-0">Inverter / generator backup so lights and fans stay on during outages.</p>
+        </article>
+        <article class="card">
+          <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-clean"></use></svg></div>
+          <h3>Housekeeping</h3>
+          <p class="muted mb-0">Daily or regular cleaning of rooms and shared areas, plus laundry support.</p>
+        </article>
+        <article class="card">
+          <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-bus"></use></svg></div>
+          <h3>Easy Transport Access</h3>
+          <p class="muted mb-0">Close to bus routes, colleges, coaching hubs and markets in Indore.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       KEY FACILITIES (detailed)
+       ========================================================= -->
+  <section class="section" aria-labelledby="facilities-h">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Key Facilities</span>
+        <h2 id="facilities-h">Key facilities at our Indore hostels</h2>
+        <p>What you can expect in the monthly rent, in plain language.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card card--pad-lg">
+          <h3>Rooms &amp; Living</h3>
+          <ul class="spec-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Single, double and triple sharing room options</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> AC and non-AC rooms (varies by location)</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Bed, mattress, study table, chair and wardrobe</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Attached or common washrooms — [Room Details – to be added]</li>
+          </ul>
+        </article>
+
+        <article class="card card--pad-lg">
+          <h3>Food &amp; Hygiene</h3>
+          <ul class="spec-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> In-house mess / canteen with daily fresh cooking</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Pure vegetarian menu, weekly rotation</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Drinking water — RO / water cooler</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Meal timings: [Meal Plan &amp; Timings – to be added]</li>
+          </ul>
+        </article>
+
+        <article class="card card--pad-lg">
+          <h3>Safety &amp; Support</h3>
+          <ul class="spec-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> CCTV in common areas and at the entrance</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Warden / caretaker on site</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Visitor policy and entry register: [Rules – to be added]</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> First-aid kit and emergency contacts displayed</li>
+          </ul>
+        </article>
+
+        <article class="card card--pad-lg">
+          <h3>Utilities &amp; Services</h3>
+          <ul class="spec-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> 24×7 water supply, hot water in winter</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Power backup for lights and fans</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Housekeeping and laundry support</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Parking: [Parking Details – to be added]</li>
+          </ul>
+        </article>
+
+        <article class="card card--pad-lg">
+          <h3>Study &amp; Common Areas</h3>
+          <ul class="spec-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Quiet study space / reading room</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Common room for TV and indoor games</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Terrace or open area for fresh air</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Notice board for hostel updates</li>
+          </ul>
+        </article>
+
+        <article class="card card--pad-lg">
+          <h3>What Is Not Included</h3>
+          <ul class="spec-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Any charges outside the monthly rent: [Extra Charges – to be added]</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Security deposit / advance: [Deposit – to be added]</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Guest stay policy: [Guest Policy – to be added]</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Full rules list is on the <a href="about.html">About Us</a> page</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ROOMS PREVIEW
+       ========================================================= -->
+  <section class="section section--tint" aria-labelledby="rooms-h">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Rooms &amp; Sharing Options</span>
+        <h2 id="rooms-h">Choose the room that fits your budget</h2>
+        <p>Room types and rent vary by brand and location. Current rent for each room type will be published here.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <div class="ph ph--img" role="img" aria-label="[Room Photo Here] – single occupancy hostel room in Indore">[Room Photo Here]</div>
+          <h3 style="margin-top:14px">Single Sharing Room</h3>
+          <p class="muted">One bed, study table, wardrobe and full privacy. Good for students who prefer to study alone.</p>
+          <span class="price-tag">[Price – to be added]</span>
+          <p style="margin-top:14px"><a class="btn btn--primary btn--block" href="#enquiry">Enquire about this room</a></p>
+        </article>
+
+        <article class="card">
+          <div class="ph ph--img" role="img" aria-label="[Room Photo Here] – double sharing hostel room in Indore">[Room Photo Here]</div>
+          <h3 style="margin-top:14px">Double Sharing Room</h3>
+          <p class="muted">Two beds with separate study space. A popular balance of privacy and cost.</p>
+          <span class="price-tag">[Price – to be added]</span>
+          <p style="margin-top:14px"><a class="btn btn--primary btn--block" href="#enquiry">Enquire about this room</a></p>
+        </article>
+
+        <article class="card">
+          <div class="ph ph--img" role="img" aria-label="[Room Photo Here] – triple sharing hostel room in Indore">[Room Photo Here]</div>
+          <h3 style="margin-top:14px">Triple Sharing Room</h3>
+          <p class="muted">Three beds per room — the most budget-friendly option for students.</p>
+          <span class="price-tag">[Price – to be added]</span>
+          <p style="margin-top:14px"><a class="btn btn--primary btn--block" href="#enquiry">Enquire about this room</a></p>
+        </article>
+      </div>
+      <p class="center muted" style="margin-top:20px">
+        AC rooms may be available at selected locations. Ask us: <a href="tel:+91XXXXXXXXXX">Call [Phone Number]</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PHOTO GALLERY
+       ========================================================= -->
+  <section class="section" aria-labelledby="gallery-h">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Photo Gallery</span>
+        <h2 id="gallery-h">A look inside our hostels</h2>
+        <p>Real photos of rooms, the mess, common areas and the buildings will be added here.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Room Photo Here] – furnished hostel room with bed and study table">[Room Photo Here]</div><figcaption>Rooms</figcaption></figure>
+        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Canteen Photo Here] – hostel mess and dining area in Indore">[Canteen Photo Here]</div><figcaption>Mess / Canteen</figcaption></figure>
+        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Common Area Photo Here] – hostel common room with seating">[Common Area Photo Here]</div><figcaption>Common Areas</figcaption></figure>
+        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Building Photo Here] – hostel building exterior in Indore">[Building Photo Here]</div><figcaption>Building</figcaption></figure>
+        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Study Room Photo Here] – quiet study area for hostel residents">[Study Area Photo Here]</div><figcaption>Study Area</figcaption></figure>
+        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Washroom Photo Here] – clean hostel washroom">[Washroom Photo Here]</div><figcaption>Washrooms</figcaption></figure>
+        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Entrance Photo Here] – hostel entrance with security desk">[Entrance Photo Here]</div><figcaption>Entrance &amp; Security</figcaption></figure>
+        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Terrace Photo Here] – open terrace area of the hostel">[Open Area Photo Here]</div><figcaption>Open Area</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       WHY CHOOSE US + TESTIMONIALS
+       ========================================================= -->
+  <section class="section section--surface" aria-labelledby="why-h">
+    <div class="container">
+      <div class="grid grid--2">
+        <div>
+          <span class="eyebrow">Why Choose Us</span>
+          <h2 id="why-h">A hostel group parents can trust</h2>
+          <ul class="trust-list">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg>
+              <div><strong>Safety comes first.</strong><br><span class="muted">CCTV, controlled entry, on-site warden and a clear visitor policy at every location.</span></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-meal"></use></svg>
+              <div><strong>Home-style food, not hostel food.</strong><br><span class="muted">Fresh vegetarian cooking from our own kitchen, served on a fixed daily schedule.</span></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg>
+              <div><strong>Separate hostels for boys and girls.</strong><br><span class="muted">Each brand caters to a defined group, so residents and their families feel comfortable.</span></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+              <div><strong>4 locations across Indore.</strong><br><span class="muted">Pick the hostel closest to your college, coaching centre, hospital or office.</span></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-user"></use></svg>
+              <div><strong>One point of contact.</strong><br><span class="muted">Call or WhatsApp [Phone Number] and our team will guide you to the right location.</span></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg>
+              <div><strong>Clear, written policies.</strong><br><span class="muted">Rent, deposit, rules and notice period are explained before you pay anything. [Rules – to be added]</span></div>
+            </li>
+          </ul>
+          <a class="btn btn--primary" href="#enquiry">Enquire Now <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        </div>
+
+        <div>
+          <h3>What residents &amp; parents say</h3>
+          <p class="muted">Real reviews will be added here. No review has been written or invented for this website.</p>
+
+          <div class="grid" style="gap:14px">
+            <article class="testimonial">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <blockquote>[Review 1 – to be added from a real resident or parent]</blockquote>
+              <p class="who mb-0">[Reviewer Name 1] <span>[Student / Parent] · [Brand &amp; Location]</span></p>
+            </article>
+            <article class="testimonial">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <blockquote>[Review 2 – to be added from a real resident or parent]</blockquote>
+              <p class="who mb-0">[Reviewer Name 2] <span>[Student / Parent] · [Brand &amp; Location]</span></p>
+            </article>
+            <article class="testimonial">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <blockquote>[Review 3 – to be added from a real resident or parent]</blockquote>
+              <p class="who mb-0">[Reviewer Name 3] <span>[Student / Parent] · [Brand &amp; Location]</span></p>
+            </article>
+          </div>
+          <p class="muted" style="margin-top:14px">Read or leave a review on our Google Business Profile: [GMB Link – Location 1]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       OUR 4 LOCATIONS
+       ========================================================= -->
+  <section class="section" aria-labelledby="locations-h">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Our 4 Locations</span>
+        <h2 id="locations-h">Find the hostel nearest to you in Indore</h2>
+        <p>Each location is served by one of our three brands. Tap the map button for directions.</p>
+      </div>
+
+      <div class="grid grid--4">
+        <article class="card loc-card">
+          <div class="ph ph--wide" role="img" aria-label="[Building Photo Here] for Location 1 hostel in Indore">[Building Photo Here]</div>
+          <div class="loc-name" style="margin-top:14px">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+            <h3 class="mb-0">[Location 1 Name]</h3>
+          </div>
+          <p class="muted">[Brand Name 1] · [Hostel Address – Location 1]</p>
+          <a class="btn btn--outline btn--block" href="[GMB Link – Location 1]" target="_blank" rel="noopener">View on Google Map</a>
+        </article>
+
+        <article class="card loc-card">
+          <div class="ph ph--wide" role="img" aria-label="[Building Photo Here] for Location 2 hostel in Indore">[Building Photo Here]</div>
+          <div class="loc-name" style="margin-top:14px">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+            <h3 class="mb-0">[Location 2 Name]</h3>
+          </div>
+          <p class="muted">[Brand Name 2] · [Hostel Address – Location 2]</p>
+          <a class="btn btn--outline btn--block" href="[GMB Link – Location 2]" target="_blank" rel="noopener">View on Google Map</a>
+        </article>
+
+        <article class="card loc-card">
+          <div class="ph ph--wide" role="img" aria-label="[Building Photo Here] for Location 3 hostel in Indore">[Building Photo Here]</div>
+          <div class="loc-name" style="margin-top:14px">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+            <h3 class="mb-0">[Location 3 Name]</h3>
+          </div>
+          <p class="muted">[Brand Name 2] · [Hostel Address – Location 3]</p>
+          <a class="btn btn--outline btn--block" href="[GMB Link – Location 3]" target="_blank" rel="noopener">View on Google Map</a>
+        </article>
+
+        <article class="card loc-card">
+          <div class="ph ph--wide" role="img" aria-label="[Building Photo Here] for Location 4 hostel in Indore">[Building Photo Here]</div>
+          <div class="loc-name" style="margin-top:14px">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+            <h3 class="mb-0">[Location 4 Name]</h3>
+          </div>
+          <p class="muted">[Brand Name 3] · [Hostel Address – Location 4]</p>
+          <a class="btn btn--outline btn--block" href="[GMB Link – Location 4]" target="_blank" rel="noopener">View on Google Map</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FINAL CTA STRIP + ENQUIRY FORM
+       ========================================================= -->
+  <section class="section cta-strip" id="enquiry" aria-labelledby="enquiry-h">
+    <div class="container">
+      <div class="grid grid--2">
+        <div>
+          <span class="eyebrow eyebrow--accent">Enquire Now</span>
+          <h2 id="enquiry-h">Tell us where you study or work — we will find your hostel</h2>
+          <p class="lead">Send us your details and our team will call you back with room availability and rent at the location closest to you. Or reach us instantly:</p>
+          <div class="btn-row" style="margin-bottom:18px">
+            <a class="btn btn--accent" href="tel:+91XXXXXXXXXX"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg> Call [Phone Number]</a>
+            <a class="btn btn--wa" href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20hostel%20details%20in%20Indore" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"></use></svg> WhatsApp Us</a>
+          </div>
+          <ul class="spec-list" style="color:#DCEAEF">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> <span style="color:#DCEAEF">Reply during [Working Hours – to be added]</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> <span style="color:#DCEAEF">Free hostel visit before booking</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> <span style="color:#DCEAEF">Rent, deposit and rules explained in writing</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <!-- No backend connected yet. See README.md → "Connect the enquiry form". -->
+          <form class="form" method="post" action="" data-placeholder-form>
+            <h3 style="margin-top:0">Enquiry form</h3>
+            <div class="field">
+              <label for="home-name">Your Name *</label>
+              <input id="home-name" name="name" type="text" autocomplete="name" placeholder="Full name" required>
+            </div>
+            <div class="field">
+              <label for="home-phone">Phone Number *</label>
+              <input id="home-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile number" required>
+            </div>
+            <div class="field">
+              <label for="home-location">Preferred Location *</label>
+              <select id="home-location" name="location" required>
+                <option value="">Select a location</option>
+                <option value="Location 1">[Location 1 Name]</option>
+                <option value="Location 2">[Location 2 Name]</option>
+                <option value="Location 3">[Location 3 Name]</option>
+                <option value="Location 4">[Location 4 Name]</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="home-message">Message</label>
+              <textarea id="home-message" name="message" placeholder="Room type, move-in date, or any question"></textarea>
+              <span class="hint">Optional. Mention your college, coaching centre or office.</span>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit">
+              <svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg> Submit Enquiry
+            </button>
+            <p class="form-note">By submitting this form you agree to be contacted by [Hostel Group Name] about your enquiry.</p>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FAQ (matches the FAQPage schema in <head>)
+       ========================================================= -->
+  <section class="section" aria-labelledby="faq-h">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">FAQ</span>
+        <h2 id="faq-h">Frequently asked questions about hostels in Indore</h2>
+        <p>Short, direct answers. If your question is not here, just call us.</p>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>Which is the best hostel in Indore for students?</summary>
+          <p>The best hostel depends on where you study. [Hostel Group Name] runs 3 hostel brands across 4 locations in Indore, so pick the one closest to your college or coaching centre — or call <a href="tel:+91XXXXXXXXXX">[Phone Number]</a> and we will suggest the nearest option.</p>
+        </details>
+        <details>
+          <summary>What is the monthly rent of a hostel in Indore?</summary>
+          <p>Rent depends on the location, brand and room type (single, double or triple sharing). Room-wise pricing: <strong>[Price – to be added]</strong>. Call or WhatsApp us for the current rate and availability.</p>
+        </details>
+        <details>
+          <summary>Do the hostels provide mess food?</summary>
+          <p>Yes. Every hostel has an in-house mess / canteen serving fresh vegetarian meals. Meal timings and the weekly menu: [Meal Plan &amp; Timings – to be added].</p>
+        </details>
+        <details>
+          <summary>Is the hostel safe for girls?</summary>
+          <p>Safety is our first priority. Our hostels have CCTV surveillance, controlled entry, on-site staff and a warden. Visitor and entry rules: [Rules – to be added]. Parents are welcome to visit and inspect before booking.</p>
+        </details>
+        <details>
+          <summary>Can I visit the hostel before taking admission?</summary>
+          <p>Yes, we encourage it. Visit timing: [Working Hours / Visit Timing – to be added]. Call <a href="tel:+91XXXXXXXXXX">[Phone Number]</a> to book a slot at the location you prefer.</p>
+        </details>
+        <details>
+          <summary>What documents are required for hostel admission?</summary>
+          <p>Usually an ID proof, a college or company ID and a parent/guardian contact. The final list, deposit and agreement details: [Documents &amp; Deposit – to be added].</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER  (identical on all pages — edit once per page)
+     ========================================================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:#fff">
+          <span class="brand-logo" aria-hidden="true">[Logo<br>Here]</span>
+          <span class="brand-name" style="color:#fff">[Hostel Group Name]</span>
+        </div>
+        <p class="footer-about" style="margin-top:12px">[Short about line – to be added] We run 3 hostel brands across 4 locations in Indore, Madhya Pradesh.</p>
+        <div class="social">
+          <a href="[Instagram Link]" aria-label="Instagram – [Hostel Group Name]" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+          <a href="[Facebook Link]" aria-label="Facebook – [Hostel Group Name]" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"></use></svg></a>
+          <a href="[YouTube Link]" aria-label="YouTube – [Hostel Group Name]" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-youtube"></use></svg></a>
+        </div>
+      </div>
+
+      <nav aria-label="Quick links">
+        <h3>Quick Links</h3>
+        <ul class="footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Our locations">
+        <h3>Our Locations</h3>
+        <ul class="footer-list">
+          <li><a href="[GMB Link – Location 1]" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Google Map – Location 1</a></li>
+          <li><a href="[GMB Link – Location 2]" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Google Map – Location 2</a></li>
+          <li><a href="[GMB Link – Location 3]" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Google Map – Location 3</a></li>
+          <li><a href="[GMB Link – Location 4]" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Google Map – Location 4</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-list">
+          <li><a href="tel:+91XXXXXXXXXX"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg> [Phone Number]</a></li>
+          <li><a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"></use></svg> [WhatsApp Number]</a></li>
+          <li><a href="mailto:[Email]"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg> [Email]</a></li>
+          <li><span class="muted" style="color:#B9CDD5"><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg> [Working Hours – to be added]</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="mb-0">© <span data-year>2026</span> [Hostel Group Name]. All rights reserved.</p>
+      <p class="mb-0">Website by Digitalads</p>
+    </div>
+    <p class="footer-note">Hostels in Indore · Boys hostel Indore · Girls hostel Indore · Student hostel Indore · PG in Indore · [Brand Name 1] · [Brand Name 2] · [Brand Name 3]</p>
+  </div>
+</footer>
+
+<!-- Sticky mobile Call / WhatsApp bar -->
+<div class="mobile-bar">
+  <a class="btn btn--tel" href="tel:+91XXXXXXXXXX"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg> Call Now</a>
+  <a class="btn btn--wa" href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20hostel%20details%20in%20Indore" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"></use></svg> WhatsApp</a>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
