@@ -183,6 +183,33 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
   color:var(--c-text);
   line-height:1.25;
 }
+.hero-hostels-pills{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 16px;
+}
+.hostel-pill{
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: .84rem;
+  font-weight: 700;
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  color: var(--c-text);
+  box-shadow: var(--shadow-s);
+}
+.hostel-pill--primary{
+  background: var(--c-primary);
+  color: #fff;
+  border-color: var(--c-primary);
+  font-size: .92rem;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
 .hero h1{ margin-bottom:12px; }
 .hero .lead{ margin-bottom:20px; }
 .hero-cta{ display:flex; flex-direction:column; gap:12px; }
