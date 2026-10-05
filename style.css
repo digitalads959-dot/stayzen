@@ -7,27 +7,27 @@
    ============================================================ */
 
 :root{
-  /* ---- BRAND COLOURS (change these) ---- */
-  --c-primary:        #12566B;   /* main brand colour: buttons, headings */
-  --c-primary-dark:   #0B3B4A;   /* hover / darker shade */
-  --c-primary-light:  #E6F1F4;   /* soft tint background */
-  --c-accent:         #E8A33D;   /* warm accent: highlights, ratings */
-  --c-accent-dark:    #C47F17;
-  --c-accent-light:   #FDF4E4;
+  /* ---- BRAND COLOURS (extracted directly from Stayzen logo) ---- */
+  --c-primary:        #195C55;   /* main brand forest teal/green from logo */
+  --c-primary-dark:   #0E3E39;   /* hover / darker forest shade */
+  --c-primary-light:  #EDF5F4;   /* soft sage/mint tint background */
+  --c-accent:         #C2603D;   /* warm terracotta rust from logo */
+  --c-accent-dark:    #9E4627;   /* hover / darker terracotta */
+  --c-accent-light:   #FDF3EE;   /* soft terracotta tint background */
 
-  /* ---- NEUTRALS (change only if needed) ---- */
+  /* ---- NEUTRALS ---- */
   --c-bg:             #FFFFFF;
-  --c-surface:        #F7F5F1;   /* warm off-white section background */
-  --c-surface-2:      #EFEAE2;
-  --c-text:           #1F2933;
-  --c-text-soft:      #4B5A63;
-  --c-muted:          #6B7A82;
-  --c-border:         #E3DED6;
+  --c-surface:        #F8FAF9;   /* calm, clean natural surface */
+  --c-surface-2:      #EEF2F1;
+  --c-text:           #1C2A28;   /* deep rich charcoal slate */
+  --c-text-soft:      #4A5B58;
+  --c-muted:          #6E7F7C;
+  --c-border:         #DFE7E5;
   --c-white:          #FFFFFF;
 
   /* ---- ACTION COLOURS ---- */
-  --c-tel:            #12566B;   /* Call button */
-  --c-wa:             #25D366;   /* WhatsApp button (brand green) */
+  --c-tel:            #195C55;   /* Call button */
+  --c-wa:             #25D366;   /* WhatsApp button */
   --c-wa-dark:        #1B9E4B;
 
   /* ---- SHAPE & SPACING ---- */
@@ -103,8 +103,8 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
 .btn:hover{ text-decoration:none; transform:translateY(-1px); }
 .btn--primary{ background:var(--c-primary); color:#fff; }
 .btn--primary:hover{ background:var(--c-primary-dark); }
-.btn--accent{ background:var(--c-accent); color:#241703; }
-.btn--accent:hover{ background:var(--c-accent-dark); }
+.btn--accent{ background:var(--c-accent); color:#ffffff; }
+.btn--accent:hover{ background:var(--c-accent-dark); color:#ffffff; }
 .btn--tel{ background:var(--c-tel); color:#fff; }
 .btn--tel:hover{ background:var(--c-primary-dark); }
 .btn--wa{ background:var(--c-wa); color:#04310f; }
@@ -123,13 +123,22 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
 .header-inner{ display:flex; align-items:center; gap:12px; min-height:64px; }
 .brand{ display:flex; align-items:center; gap:10px; font-weight:800; color:var(--c-text); }
 .brand:hover{ text-decoration:none; }
+.brand-logo-img{
+  width:44px; height:44px; object-fit:contain; border-radius:10px; display:block;
+  box-shadow:0 1px 4px rgba(0,0,0,.08);
+}
+.brand-logo-img--footer{
+  background:#ffffff; padding:2px; border-radius:8px;
+}
 .brand-logo{
   width:44px; height:44px; border-radius:10px; font-size:.6rem; font-weight:700;
   display:flex; align-items:center; justify-content:center; text-align:center;
   background:var(--c-surface-2); border:1px dashed var(--c-border); color:var(--c-muted);
   line-height:1.1; padding:2px;
 }
-.brand-name{ font-size:1rem; }
+.brand-name{ font-size:1.1rem; letter-spacing:-.01em; }
+.brand-text-stay{ color:var(--c-primary); font-weight:900; }
+.brand-text-zen{ color:var(--c-accent); font-weight:900; }
 .brand-sub{ display:block; font-size:.7rem; font-weight:600; color:var(--c-muted); }
 .nav-toggle{
   margin-left:auto; width:46px; height:46px; border-radius:10px; background:var(--c-surface);
@@ -156,6 +165,24 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
   padding:32px 0 36px;
 }
 .hero-grid{ display:grid; gap:24px; }
+.hero-h1{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-bottom:14px;
+}
+.brand-h1{
+  font-size:clamp(2.5rem, 7vw, 4rem);
+  font-weight:900;
+  letter-spacing:-.02em;
+  line-height:1.05;
+}
+.hero-h1-sub{
+  font-size:clamp(1.15rem, 3.2vw, 1.7rem);
+  font-weight:700;
+  color:var(--c-text);
+  line-height:1.25;
+}
 .hero h1{ margin-bottom:12px; }
 .hero .lead{ margin-bottom:20px; }
 .hero-cta{ display:flex; flex-direction:column; gap:12px; }
@@ -303,16 +330,16 @@ figcaption{ font-size:.78rem; color:var(--c-muted); margin-top:6px; text-align:c
 .author-box .ph{ width:60px; min-height:60px; height:60px; border-radius:50%; flex:0 0 60px; font-size:.6rem; }
 
 /* ---------- FOOTER ---------- */
-.site-footer{ background:var(--c-primary-dark); color:#D6E4E9; padding:36px 0 20px; margin-top:8px; }
+.site-footer{ background:var(--c-primary-dark); color:#D6EAE7; padding:36px 0 20px; margin-top:8px; }
 .site-footer h3{ color:#fff; font-size:1rem; margin-bottom:12px; }
-.site-footer a{ color:#D6E4E9; }
+.site-footer a{ color:#D6EAE7; }
 .site-footer a:hover{ color:#fff; }
 .footer-grid{ display:grid; gap:26px; }
 .footer-list{ list-style:none; padding:0; margin:0; }
 .footer-list li{ margin-bottom:9px; font-size:.9rem; }
 .footer-list a{ display:inline-flex; gap:8px; align-items:flex-start; }
 .footer-list .icon{ width:18px; height:18px; flex:0 0 18px; margin-top:3px; }
-.footer-about{ font-size:.9rem; color:#B9CDD5; max-width:34ch; }
+.footer-about{ font-size:.9rem; color:#BDD8D4; max-width:34ch; }
 .social{ display:flex; gap:10px; margin-top:12px; }
 .social a{
   width:44px; height:44px; border-radius:50%; background:rgba(255,255,255,.1);
@@ -321,9 +348,9 @@ figcaption{ font-size:.78rem; color:var(--c-muted); margin-top:6px; text-align:c
 .social a:hover{ background:rgba(255,255,255,.22); }
 .footer-bottom{
   border-top:1px solid rgba(255,255,255,.15); margin-top:26px; padding-top:16px;
-  font-size:.82rem; display:flex; flex-direction:column; gap:8px; color:#B9CDD5;
+  font-size:.82rem; display:flex; flex-direction:column; gap:8px; color:#BDD8D4;
 }
-.footer-note{ font-size:.78rem; color:#9DB4BD; margin-top:10px; }
+.footer-note{ font-size:.78rem; color:#A4C4BF; margin-top:10px; }
 
 /* ---------- MOBILE STICKY CALL / WHATSAPP BAR ---------- */
 .mobile-bar{
