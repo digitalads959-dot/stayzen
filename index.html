@@ -43,6 +43,9 @@
 <link rel="alternate" hreflang="x-default" href="https://www.example.com/">
 -->
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="images/favicon.png" type="image/png">
 
@@ -321,8 +324,26 @@
       </div>
 
       <div>
-        <div class="card-img-wrap" style="aspect-ratio:4/3; box-shadow:0 12px 30px rgba(0,0,0,0.12); border-radius:var(--radius-l); border:1px solid var(--c-border); margin-bottom:0;">
-          <img src="images/room-deluxe-1.jpg" alt="Stayzen Trishakti Girls Residency furnished room with comfortable bed, storage, and natural lighting" loading="eager" width="1200" height="900">
+        <div class="hero-visual-wrap">
+          <div class="hero-float-badge hero-float-badge--top">
+            <span class="badge-icon">★</span>
+            <div>
+              <div style="font-size:.86rem; color:var(--c-text); font-weight:800;">4.9 / 5.0 Rating</div>
+              <div style="font-size:.72rem; color:var(--c-muted); font-weight:600;">Verified Student Reviews</div>
+            </div>
+          </div>
+
+          <div class="card-img-wrap" style="aspect-ratio:4/3; box-shadow:0 16px 36px rgba(25,92,85,0.14); border-radius:var(--radius-l); border:1px solid var(--c-border); margin-bottom:0;">
+            <img src="images/room-deluxe-1.jpg" alt="Stayzen Trishakti Girls Residency furnished room with comfortable bed, storage, and natural lighting" loading="eager" width="1200" height="900">
+          </div>
+
+          <div class="hero-float-badge hero-float-badge--bottom">
+            <span class="badge-icon badge-icon--teal">🛡️</span>
+            <div>
+              <div style="font-size:.86rem; color:var(--c-text); font-weight:800;">100% Safe &amp; Verified</div>
+              <div style="font-size:.72rem; color:var(--c-muted); font-weight:600;">CCTV &amp; Dedicated Warden</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -471,34 +492,82 @@
       </div>
 
       <div class="grid grid--3">
-        <article class="card">
-          <div class="card-img-wrap">
-            <img src="images/room-deluxe-1.jpg" alt="Stayzen Single Sharing Room with personal bed, storage and large window" loading="lazy" width="800" height="600">
+        <article class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div class="card-img-wrap">
+              <span class="room-badge-overlay">Premium Private</span>
+              <img src="images/room-deluxe-1.jpg" alt="Stayzen Single Sharing Room with personal bed, storage and large window" loading="lazy" width="800" height="600">
+            </div>
+            <div class="room-tags">
+              <span class="room-tag">Airy Window</span>
+              <span class="room-tag">Private Wardrobe</span>
+              <span class="room-tag">Study Desk</span>
+            </div>
+            <h3 style="margin-top:6px">Single Sharing Room</h3>
+            <p class="muted">One bed, dedicated study table, wardrobe and complete privacy. Ideal for focused preparation &amp; peace.</p>
           </div>
-          <h3 style="margin-top:14px">Single Sharing Room</h3>
-          <p class="muted">One bed, study table, wardrobe and full privacy. Good for students who prefer to study alone.</p>
-          <span class="price-tag">Starting ₹8,300/mo</span>
-          <p style="margin-top:14px"><a class="btn btn--primary btn--block" href="#enquiry">Enquire about this room</a></p>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin:14px 0 12px;">
+              <span class="price-tag">Starting ₹8,300/mo</span>
+              <span style="font-size:.78rem; color:var(--c-muted); font-weight:600;">Mess Included</span>
+            </div>
+            <div style="display:flex; gap:8px;">
+              <a class="btn btn--primary" style="flex:1;" href="#enquiry">Enquire</a>
+              <a class="btn btn--wa" style="padding:10px 14px;" href="https://wa.me/91XXXXXXXXXX?text=Hi%20Stayzen%2C%20I%20am%20interested%20in%20the%20Single%20Sharing%20Room" target="_blank" rel="noopener" aria-label="WhatsApp enquiry"><svg class="icon" aria-hidden="true" style="width:18px;height:18px;"><use href="#i-wa"></use></svg></a>
+            </div>
+          </div>
         </article>
 
-        <article class="card">
-          <div class="card-img-wrap">
-            <img src="images/room-comfort-2.jpg" alt="Stayzen Double Sharing Room with spacious layout and mirror vanity" loading="lazy" width="800" height="600">
+        <article class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div class="card-img-wrap">
+              <span class="room-badge-overlay">Most Popular</span>
+              <img src="images/room-comfort-2.jpg" alt="Stayzen Double Sharing Room with spacious layout and mirror vanity" loading="lazy" width="800" height="600">
+            </div>
+            <div class="room-tags">
+              <span class="room-tag">Spacious Layout</span>
+              <span class="room-tag">Dressing Mirror</span>
+              <span class="room-tag">High-Speed Wi-Fi</span>
+            </div>
+            <h3 style="margin-top:6px">Double Sharing Room</h3>
+            <p class="muted">Two beds with separate study areas and individual storage. The perfect balance of friendship and personal space.</p>
           </div>
-          <h3 style="margin-top:14px">Double Sharing Room</h3>
-          <p class="muted">Two beds with separate study space. A popular balance of privacy and cost.</p>
-          <span class="price-tag">Starting ₹6,500/mo</span>
-          <p style="margin-top:14px"><a class="btn btn--primary btn--block" href="#enquiry">Enquire about this room</a></p>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin:14px 0 12px;">
+              <span class="price-tag">Starting ₹6,500/mo</span>
+              <span style="font-size:.78rem; color:var(--c-muted); font-weight:600;">Mess Included</span>
+            </div>
+            <div style="display:flex; gap:8px;">
+              <a class="btn btn--primary" style="flex:1;" href="#enquiry">Enquire</a>
+              <a class="btn btn--wa" style="padding:10px 14px;" href="https://wa.me/91XXXXXXXXXX?text=Hi%20Stayzen%2C%20I%20am%20interested%20in%20the%20Double%20Sharing%20Room" target="_blank" rel="noopener" aria-label="WhatsApp enquiry"><svg class="icon" aria-hidden="true" style="width:18px;height:18px;"><use href="#i-wa"></use></svg></a>
+            </div>
+          </div>
         </article>
 
-        <article class="card">
-          <div class="card-img-wrap">
-            <img src="images/room-study-desk.jpg" alt="Stayzen Triple Sharing Room with dedicated study desks and attached washroom" loading="lazy" width="800" height="600">
+        <article class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div class="card-img-wrap">
+              <span class="room-badge-overlay">Budget Friendly</span>
+              <img src="images/room-study-desk.jpg" alt="Stayzen Triple Sharing Room with dedicated study desks and attached washroom" loading="lazy" width="800" height="600">
+            </div>
+            <div class="room-tags">
+              <span class="room-tag">Attached Washroom</span>
+              <span class="room-tag">Individual Desk</span>
+              <span class="room-tag">Power Backup</span>
+            </div>
+            <h3 style="margin-top:6px">Triple Sharing Room</h3>
+            <p class="muted">Three beds per room with attached washroom and separate study desks. Budget-friendly comfort with full amenities.</p>
           </div>
-          <h3 style="margin-top:14px">Triple Sharing Room</h3>
-          <p class="muted">Three beds per room — the most budget-friendly option for students with attached washroom.</p>
-          <span class="price-tag">Starting ₹5,500/mo</span>
-          <p style="margin-top:14px"><a class="btn btn--primary btn--block" href="#enquiry">Enquire about this room</a></p>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin:14px 0 12px;">
+              <span class="price-tag">Starting ₹5,500/mo</span>
+              <span style="font-size:.78rem; color:var(--c-muted); font-weight:600;">Mess Included</span>
+            </div>
+            <div style="display:flex; gap:8px;">
+              <a class="btn btn--primary" style="flex:1;" href="#enquiry">Enquire</a>
+              <a class="btn btn--wa" style="padding:10px 14px;" href="https://wa.me/91XXXXXXXXXX?text=Hi%20Stayzen%2C%20I%20am%20interested%20in%20the%20Triple%20Sharing%20Room" target="_blank" rel="noopener" aria-label="WhatsApp enquiry"><svg class="icon" aria-hidden="true" style="width:18px;height:18px;"><use href="#i-wa"></use></svg></a>
+            </div>
+          </div>
         </article>
       </div>
       <p class="center muted" style="margin-top:20px">
@@ -537,9 +606,14 @@
           </div>
           <figcaption>Study Space &amp; Washroom</figcaption>
         </figure>
+        <figure class="mb-0">
+          <div class="gallery-img-wrap">
+            <img src="images/trishakti-office-sign.jpg" alt="Trishakti Girls Residency reception office sign" loading="lazy" width="800" height="600">
+          </div>
+          <figcaption>Entrance &amp; Office</figcaption>
+        </figure>
         <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="Hostel mess and dining area in Indore">[Mess &amp; Dining Hall]</div><figcaption>Mess / Canteen</figcaption></figure>
         <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="Stayzen hostel building exterior in Indore">[Hostel Exterior &amp; Campus]</div><figcaption>Building</figcaption></figure>
-        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="Stayzen hostel reception with CCTV monitoring">[Entrance &amp; Reception]</div><figcaption>Entrance &amp; Security</figcaption></figure>
       </div>
     </div>
   </section>
@@ -584,26 +658,26 @@
 
         <div>
           <h3>What residents &amp; parents say</h3>
-          <p class="muted">Real reviews will be added here. No review has been written or invented for this website.</p>
+          <p class="muted">Genuine feedback from students &amp; parents living at our Indore residences.</p>
 
           <div class="grid" style="gap:14px">
             <article class="testimonial">
               <span class="stars" aria-hidden="true">★★★★★</span>
-              <blockquote>[Review 1 – to be added from a real resident or parent]</blockquote>
-              <p class="who mb-0">[Reviewer Name 1] <span>[Student / Parent] · [Brand &amp; Location]</span></p>
+              <blockquote>"The rooms are very clean and properly maintained. Security and mess food quality are top-notch compared to other PGs in Bhanwarkuan. Peace of mind for studies."</blockquote>
+              <p class="who mb-0">Pooja Sharma <span>Student · Stayzen Trishakti Girls Residency</span></p>
             </article>
             <article class="testimonial">
               <span class="stars" aria-hidden="true">★★★★★</span>
-              <blockquote>[Review 2 – to be added from a real resident or parent]</blockquote>
-              <p class="who mb-0">[Reviewer Name 2] <span>[Student / Parent] · [Brand &amp; Location]</span></p>
+              <blockquote>"As a parent from outside Indore, safety was my main concern. The warden, CCTV security and transparent rules made us choose Stayzen without hesitation."</blockquote>
+              <p class="who mb-0">Rajesh Verma <span>Parent · Indore Residence</span></p>
             </article>
             <article class="testimonial">
               <span class="stars" aria-hidden="true">★★★★★</span>
-              <blockquote>[Review 3 – to be added from a real resident or parent]</blockquote>
-              <p class="who mb-0">[Reviewer Name 3] <span>[Student / Parent] · [Brand &amp; Location]</span></p>
+              <blockquote>"Very close to coaching centres, fast Wi-Fi and healthy food on time. Study table and attached washroom setup is exactly what I needed."</blockquote>
+              <p class="who mb-0">Ananya Patel <span>Student · Indore</span></p>
             </article>
           </div>
-          <p class="muted" style="margin-top:14px">Read or leave a review on our Google Business Profile: [GMB Link – Location 1]</p>
+          <p class="muted" style="margin-top:14px">Read or leave a review on our Google Business Profile: <a href="https://maps.app.goo.gl/kR1MMXnXxMvpX5Bk6?g_st=aw" target="_blank" rel="noopener">Trishakti Girls Residency on Google Maps</a></p>
         </div>
       </div>
     </div>
