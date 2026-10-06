@@ -66,18 +66,18 @@
     {
       "@type": "Hostel",
       "@id": "https://www.example.com/#location-1",
-      "name": "STAYZEN – [Location 1 Name]",
+      "name": "Stayzen Trishakti Girls Residency PG & Hostel",
       "url": "https://www.example.com/",
-      "image": "https://www.example.com/images/[building-photo-location-1].jpg",
+      "image": "https://www.example.com/images/room-deluxe-1.jpg",
       "telephone": "[Phone Number]",
-      "priceRange": "[Price – to be added]",
+      "priceRange": "₹8,300+",
       "parentOrganization": { "@id": "https://www.example.com/#organization" },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "[Hostel Address – Location 1]",
-        "addressLocality": "[Location 1 Name]",
+        "streetAddress": "Bholaram Ustad Marg, Bholaram Ustad Market, Sector A, Indrapuri Colony, Shivampuri Colony",
+        "addressLocality": "Bhanwarkuan, Indore",
         "addressRegion": "Madhya Pradesh",
-        "postalCode": "[PIN Code]",
+        "postalCode": "452001",
         "addressCountry": "IN"
       },
       "areaServed": { "@type": "City", "name": "Indore" },
@@ -88,7 +88,7 @@
         { "@type": "LocationFeatureSpecification", "name": "Power backup", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "Housekeeping", "value": true }
       ],
-      "hasMap": "[GMB Link – Location 1]"
+      "hasMap": "https://maps.app.goo.gl/kR1MMXnXxMvpX5Bk6?g_st=aw"
     },
     {
       "@type": "Hostel",
@@ -321,10 +321,8 @@
       </div>
 
       <div>
-        <!-- Replace this placeholder with a real photo:
-             <img src="images/hero-hostel-indore.jpg" alt="Hostel building in Indore with clean rooms and study area" loading="lazy" width="1200" height="900"> -->
-        <div class="ph ph--img" role="img" aria-label="[Building Photo Here] – exterior of the hostel in Indore">
-          [Building Photo Here]
+        <div class="card-img-wrap" style="aspect-ratio:4/3; box-shadow:0 12px 30px rgba(0,0,0,0.12); border-radius:var(--radius-l); border:1px solid var(--c-border); margin-bottom:0;">
+          <img src="images/room-deluxe-1.jpg" alt="Stayzen Trishakti Girls Residency furnished room with comfortable bed, storage, and natural lighting" loading="eager" width="1200" height="900">
         </div>
       </div>
     </div>
@@ -474,26 +472,32 @@
 
       <div class="grid grid--3">
         <article class="card">
-          <div class="ph ph--img" role="img" aria-label="[Room Photo Here] – single occupancy hostel room in Indore">[Room Photo Here]</div>
+          <div class="card-img-wrap">
+            <img src="images/room-deluxe-1.jpg" alt="Stayzen Single Sharing Room with personal bed, storage and large window" loading="lazy" width="800" height="600">
+          </div>
           <h3 style="margin-top:14px">Single Sharing Room</h3>
           <p class="muted">One bed, study table, wardrobe and full privacy. Good for students who prefer to study alone.</p>
-          <span class="price-tag">[Price – to be added]</span>
+          <span class="price-tag">Starting ₹8,300/mo</span>
           <p style="margin-top:14px"><a class="btn btn--primary btn--block" href="#enquiry">Enquire about this room</a></p>
         </article>
 
         <article class="card">
-          <div class="ph ph--img" role="img" aria-label="[Room Photo Here] – double sharing hostel room in Indore">[Room Photo Here]</div>
+          <div class="card-img-wrap">
+            <img src="images/room-comfort-2.jpg" alt="Stayzen Double Sharing Room with spacious layout and mirror vanity" loading="lazy" width="800" height="600">
+          </div>
           <h3 style="margin-top:14px">Double Sharing Room</h3>
           <p class="muted">Two beds with separate study space. A popular balance of privacy and cost.</p>
-          <span class="price-tag">[Price – to be added]</span>
+          <span class="price-tag">Starting ₹6,500/mo</span>
           <p style="margin-top:14px"><a class="btn btn--primary btn--block" href="#enquiry">Enquire about this room</a></p>
         </article>
 
         <article class="card">
-          <div class="ph ph--img" role="img" aria-label="[Room Photo Here] – triple sharing hostel room in Indore">[Room Photo Here]</div>
+          <div class="card-img-wrap">
+            <img src="images/room-study-desk.jpg" alt="Stayzen Triple Sharing Room with dedicated study desks and attached washroom" loading="lazy" width="800" height="600">
+          </div>
           <h3 style="margin-top:14px">Triple Sharing Room</h3>
-          <p class="muted">Three beds per room — the most budget-friendly option for students.</p>
-          <span class="price-tag">[Price – to be added]</span>
+          <p class="muted">Three beds per room — the most budget-friendly option for students with attached washroom.</p>
+          <span class="price-tag">Starting ₹5,500/mo</span>
           <p style="margin-top:14px"><a class="btn btn--primary btn--block" href="#enquiry">Enquire about this room</a></p>
         </article>
       </div>
@@ -515,14 +519,27 @@
       </div>
 
       <div class="gallery">
-        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Room Photo Here] – furnished hostel room with bed and study table">[Room Photo Here]</div><figcaption>Rooms</figcaption></figure>
-        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Canteen Photo Here] – hostel mess and dining area in Indore">[Canteen Photo Here]</div><figcaption>Mess / Canteen</figcaption></figure>
-        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Common Area Photo Here] – hostel common room with seating">[Common Area Photo Here]</div><figcaption>Common Areas</figcaption></figure>
-        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Building Photo Here] – hostel building exterior in Indore">[Building Photo Here]</div><figcaption>Building</figcaption></figure>
-        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Study Room Photo Here] – quiet study area for hostel residents">[Study Area Photo Here]</div><figcaption>Study Area</figcaption></figure>
-        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Washroom Photo Here] – clean hostel washroom">[Washroom Photo Here]</div><figcaption>Washrooms</figcaption></figure>
-        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Entrance Photo Here] – hostel entrance with security desk">[Entrance Photo Here]</div><figcaption>Entrance &amp; Security</figcaption></figure>
-        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="[Terrace Photo Here] – open terrace area of the hostel">[Open Area Photo Here]</div><figcaption>Open Area</figcaption></figure>
+        <figure class="mb-0">
+          <div class="gallery-img-wrap">
+            <img src="images/room-deluxe-1.jpg" alt="Stayzen Trishakti Girls Residency Deluxe Room with natural window lighting" loading="lazy" width="800" height="600">
+          </div>
+          <figcaption>Furnished Rooms</figcaption>
+        </figure>
+        <figure class="mb-0">
+          <div class="gallery-img-wrap">
+            <img src="images/room-comfort-2.jpg" alt="Stayzen Comfort Sharing Room with personal dressing mirror and storage" loading="lazy" width="800" height="600">
+          </div>
+          <figcaption>Room Interiors</figcaption>
+        </figure>
+        <figure class="mb-0">
+          <div class="gallery-img-wrap">
+            <img src="images/room-study-desk.jpg" alt="Stayzen dedicated study desk, chair and attached washroom setup" loading="lazy" width="800" height="600">
+          </div>
+          <figcaption>Study Space &amp; Washroom</figcaption>
+        </figure>
+        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="Hostel mess and dining area in Indore">[Mess &amp; Dining Hall]</div><figcaption>Mess / Canteen</figcaption></figure>
+        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="Stayzen hostel building exterior in Indore">[Hostel Exterior &amp; Campus]</div><figcaption>Building</figcaption></figure>
+        <figure class="mb-0"><div class="ph ph--img" role="img" aria-label="Stayzen hostel reception with CCTV monitoring">[Entrance &amp; Reception]</div><figcaption>Entrance &amp; Security</figcaption></figure>
       </div>
     </div>
   </section>
@@ -605,13 +622,15 @@
 
       <div class="grid grid--4">
         <article class="card loc-card">
-          <div class="ph ph--wide" role="img" aria-label="[Building Photo Here] for Location 1 hostel in Indore">[Building Photo Here]</div>
-          <div class="loc-name" style="margin-top:14px">
-            <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
-            <h3 class="mb-0">[Location 1 Name]</h3>
+          <div class="card-img-wrap" style="aspect-ratio:16/9; margin-bottom:10px;">
+            <img src="images/room-deluxe-1.jpg" alt="Stayzen Trishakti Girls Residency PG & Hostel Bhanwarkuan Indore" loading="lazy" width="600" height="340">
           </div>
-          <p class="muted">STAYZEN · [Hostel Address – Location 1]</p>
-          <a class="btn btn--outline btn--block" href="[GMB Link – Location 1]" target="_blank" rel="noopener">View on Google Map</a>
+          <div class="loc-name" style="margin-top:10px">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+            <h3 class="mb-0" style="font-size:1.05rem;">Trishakti Girls Residency</h3>
+          </div>
+          <p class="muted" style="font-size:.88rem;">STAYZEN · Bholaram Ustad Marg, Indrapuri &amp; Shivampuri Colony, Bhanwarkuan, Indore</p>
+          <a class="btn btn--outline btn--block" href="https://maps.app.goo.gl/kR1MMXnXxMvpX5Bk6?g_st=aw" target="_blank" rel="noopener">View on Google Map</a>
         </article>
 
         <article class="card loc-card">
@@ -761,7 +780,7 @@
         </div>
         <p class="footer-about" style="margin-top:12px">Safe, clean and comfortable hostel &amp; PG living for students and professionals across 4 locations in Indore, Madhya Pradesh.</p>
         <div class="social">
-          <a href="[Instagram Link]" aria-label="Instagram – STAYZEN" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+          <a href="https://www.instagram.com/reel/DYyBZ6eSaRB/?igsh=MXR1N2M0dWtjdXlrdQ==" aria-label="Instagram – STAYZEN" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
           <a href="[Facebook Link]" aria-label="Facebook – STAYZEN" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"></use></svg></a>
           <a href="[YouTube Link]" aria-label="YouTube – STAYZEN" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-youtube"></use></svg></a>
         </div>
@@ -780,7 +799,7 @@
       <nav aria-label="Our locations">
         <h3>Our Locations</h3>
         <ul class="footer-list">
-          <li><a href="[GMB Link – Location 1]" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Google Map – Location 1</a></li>
+          <li><a href="https://maps.app.goo.gl/kR1MMXnXxMvpX5Bk6?g_st=aw" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Trishakti Girls Residency (Bhanwarkuan)</a></li>
           <li><a href="[GMB Link – Location 2]" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Google Map – Location 2</a></li>
           <li><a href="[GMB Link – Location 3]" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Google Map – Location 3</a></li>
           <li><a href="[GMB Link – Location 4]" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Google Map – Location 4</a></li>
