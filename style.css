@@ -172,7 +172,7 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
   margin-bottom:14px;
 }
 .brand-h1{
-  font-size:clamp(2.5rem, 7vw, 4rem);
+  font-size:clamp(2.2rem, 8vw, 4rem);
   font-weight:900;
   letter-spacing:-.02em;
   line-height:1.05;
@@ -338,7 +338,7 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
   font-weight:700; font-size:.85rem;
 }
 .card-img-wrap{
-  width:100%; aspect-ratio:4/3; border-radius:var(--radius-s); overflow:hidden;
+  width:100%; aspect-ratio:3/2; border-radius:var(--radius-s); overflow:hidden;
   background:var(--c-surface); margin-bottom:12px;
   position:relative;
 }
@@ -373,10 +373,10 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
   font-size:.82rem; font-weight:700; color:var(--c-text); z-index:5;
 }
 .hero-float-badge--top{
-  top:-14px; right:-10px;
+  top:-8px; right:-8px;
 }
 .hero-float-badge--bottom{
-  bottom:-14px; left:-10px;
+  bottom:-8px; left:-8px;
 }
 .hero-float-badge .badge-icon{
   width:32px; height:32px; border-radius:8px; display:inline-flex; align-items:center;
@@ -387,7 +387,7 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
   background:var(--c-primary-light); color:var(--c-primary);
 }
 .gallery-img-wrap{
-  width:100%; aspect-ratio:4/3; border-radius:var(--radius-m); overflow:hidden;
+  width:100%; aspect-ratio:3/2; border-radius:var(--radius-m); overflow:hidden;
   background:var(--c-surface); border:1px solid var(--c-border);
 }
 .gallery-img-wrap img{
@@ -406,7 +406,7 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
 .loc-card .loc-name .icon{ color:var(--c-primary); }
 
 /* ---------- GALLERY ---------- */
-.gallery{ display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+.gallery{ display:grid; grid-template-columns:1fr; gap:12px; }
 .gallery .ph{ margin:0; }
 figcaption{ font-size:.78rem; color:var(--c-muted); margin-top:6px; text-align:center; }
 
@@ -539,7 +539,7 @@ figcaption{ font-size:.78rem; color:var(--c-muted); margin-top:6px; text-align:c
   .hero{ padding:48px 0 56px; }
   .hero-cta{ flex-direction:row; }
   .trust-strip{ grid-template-columns:repeat(4,1fr); }
-  .gallery{ grid-template-columns:repeat(3,1fr); }
+  .gallery{ grid-template-columns:repeat(2,1fr); }
   .toolbar{ grid-template-columns:1.1fr 1fr; align-items:center; }
   .footer-grid{ grid-template-columns:1.4fr 1fr 1fr; }
   .footer-bottom{ flex-direction:row; justify-content:space-between; align-items:center; }
