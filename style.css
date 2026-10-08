@@ -142,9 +142,9 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
 .brand-text-zen{ color:var(--c-accent); font-weight:900; }
 .brand-sub{ display:block; font-size:.7rem; font-weight:600; color:var(--c-muted); }
 .nav-toggle{
-  margin-left:auto; width:46px; height:46px; border-radius:10px; background:var(--c-surface);
-  border:1px solid var(--c-border); color:var(--c-primary); display:inline-flex;
-  align-items:center; justify-content:center; cursor:pointer;
+  margin-left:auto; height:42px; padding:0 14px; border-radius:999px; background:var(--c-primary-light);
+  border:1px solid var(--c-primary); color:var(--c-primary); display:inline-flex;
+  align-items:center; justify-content:center; cursor:pointer; font-weight:700;
 }
 .nav{ display:none; }
 .nav.is-open{
@@ -190,6 +190,9 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
   text-shadow: 0 2px 10px rgba(0,0,0,0.5);
   word-break: break-word;
 }
+.brand-h1 .brand-text-stay { color: #AEE2DB; } /* Lighter teal for dark background */
+.brand-h1 .brand-text-zen { color: #FF9E79; }
+
 .hero-h1-sub{
   font-size:clamp(1.1rem, 3.2vw, 1.5rem);
   font-weight:700;
@@ -198,6 +201,7 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
   text-shadow: 0 2px 8px rgba(0,0,0,0.5);
   word-break: break-word;
 }
+.hero-h1-sub .brand-text-light { color: #AEE2DB !important; }
 .hero-hostels-pills{
   display: inline-flex;
   flex-wrap: wrap;
