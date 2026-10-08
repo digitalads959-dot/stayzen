@@ -170,7 +170,7 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(14, 62, 57, 0.75) 0%, rgba(28, 42, 40, 0.60) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.4) 100%);
   z-index: 1;
 }
 .hero-grid{ position:relative; z-index:2; display:grid; gap:24px; }
@@ -432,7 +432,26 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
 .loc-card .loc-name .icon{ color:var(--c-primary); }
 
 /* ---------- GALLERY ---------- */
-.gallery{ display:grid; grid-template-columns:1fr; gap:12px; }
+@media (max-width: 719px) {
+  .gallery { 
+    display: flex; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    gap: 16px; 
+    padding-bottom: 20px; 
+    -webkit-overflow-scrolling: touch;
+  }
+  .gallery figure { 
+    flex: 0 0 85%; 
+    scroll-snap-align: center; 
+  }
+  /* Hide scrollbar for a cleaner look */
+  .gallery::-webkit-scrollbar { display: none; }
+  .gallery { -ms-overflow-style: none; scrollbar-width: none; }
+}
+@media (min-width: 720px) {
+  .gallery { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+}
 .gallery .ph{ margin:0; }
 figcaption{ font-size:.78rem; color:var(--c-muted); margin-top:6px; text-align:center; }
 
@@ -544,15 +563,21 @@ figcaption{ font-size:.78rem; color:var(--c-muted); margin-top:6px; text-align:c
 }
 .footer-note{ font-size:.78rem; color:#9DB4BD; margin-top:10px; }
 
-/* ---------- MOBILE STICKY CALL / WHATSAPP BAR ---------- */
-.mobile-bar{
-  position:fixed; left:0; right:0; bottom:0; z-index:120; display:flex; gap:8px;
-  padding:8px 12px calc(8px + env(safe-area-inset-bottom));
-  background:var(--c-white); border-top:1px solid var(--c-border);
-  box-shadow:0 -4px 14px rgba(15,40,50,.10);
+/* ---------- FLOATING WHATSAPP BUTTON ---------- */
+.floating-wa{
+  position:fixed; right:16px; bottom:16px; z-index:120;
+  width:60px; height:60px; border-radius:50%;
+  background:var(--c-wa); color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 6px 20px rgba(37, 211, 102, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.mobile-bar .btn{ flex:1; }
-.mobile-bar .btn--wa{ flex:1.15; }
+.floating-wa:hover{
+  transform:scale(1.05) translateY(-4px);
+  box-shadow:0 8px 25px rgba(37, 211, 102, 0.5);
+  color:#fff;
+}
+.floating-wa .icon{ width:32px; height:32px; }
 
 /* ---------- RESPONSIVE (tablet) ---------- */
 @media (min-width:720px){
@@ -569,7 +594,6 @@ figcaption{ font-size:.78rem; color:var(--c-muted); margin-top:6px; text-align:c
   .toolbar{ grid-template-columns:1.1fr 1fr; align-items:center; }
   .footer-grid{ grid-template-columns:1.4fr 1fr 1fr; }
   .footer-bottom{ flex-direction:row; justify-content:space-between; align-items:center; }
-  .mobile-bar{ display:none; }
 }
 
 /* ---------- RESPONSIVE (desktop) ---------- */
