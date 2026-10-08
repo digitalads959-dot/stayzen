@@ -449,7 +449,7 @@ ul,ol{ margin:0 0 1rem; padding-left:1.2rem; }
     -webkit-overflow-scrolling: touch;
   }
   .gallery figure { 
-    flex: 0 0 85%; 
+    flex: 0 0 75%; 
     scroll-snap-align: center; 
   }
   /* Hide scrollbar for a cleaner look */
@@ -642,3 +642,40 @@ figcaption{ font-size:.78rem; color:var(--c-muted); margin-top:6px; text-align:c
 .svg-sprite{ display:none; }
 .btn svg, .nav-toggle svg, .hero-note svg{ width:20px; height:20px; flex:0 0 20px; }
 .nav-toggle svg{ width:24px; height:24px; }
+
+
+/* Gallery Wrapper & Slider Buttons */
+.gallery-wrapper {
+  position: relative;
+}
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  backdrop-filter: blur(4px);
+}
+.slider-btn:hover {
+  background: rgba(0,0,0,0.7);
+}
+.slider-prev {
+  left: 8px;
+}
+.slider-next {
+  right: 8px;
+}
+
+@media (min-width: 720px) {
+  .slider-btn { display: none; }
+}
